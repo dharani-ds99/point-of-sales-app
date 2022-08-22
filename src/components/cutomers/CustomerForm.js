@@ -1,66 +1,3 @@
-// import React from 'react'
-// import {Formik,Form} from 'formik'
-// import * as Yup from 'yup'
-// import TextField from '../TextField'
-// import "bootstrap/dist/css/bootstrap.css"
-
-// const CustomerForm = (props) => {
-//     const {formSubmit} = props
-
-//     const formValidate = Yup.object({
-//         name: Yup.string()
-//             .max(15, 'Must be 15 Charater or less')
-//             .required('user name is Required'),
-//         mobile:Yup.string()
-//             .max(10, 'Must be 10 digits')
-//             .required('mobile is Required'),
-//         email: Yup.string()
-//             .email('Email is invalied')
-//             .required('Email is Required')
-        
-//     })
-
-//     const handleSubmit = (formData,formReset) => {
-//         formSubmit(formData,formReset)
-//     }
-    
-
-//     return (
-//         <Formik
-//             initialValues={{
-//                 name:'',
-//                 mobile:'',
-//                 email:''
-//             }}
-//             validationSchema={formValidate}
-//             onsubmit={(values,{resetForm}) => {
-//                 const formReset = () => {
-//                     resetForm({name:'',
-//                     mobile:'',
-//                     email:''})
-//                 }
-//                 handleSubmit(values,formReset)
-//             }  
-//             }
-//         >
-//             {formik => {
-                
-//                 <Form className='form'>
-//                     <TextField type="text" label="name" name="name" />
-//                     <TextField type="text" label="mobile" name="mobile" />
-//                     <TextField type="email" label="email" name="email" />
-
-//                     <button className='btn btn-primary m-2 ' type="submit">Add</button>
-//                 </Form>
-//             }}
-
-//         </Formik>
-//     )
-
-// }
-
-// export default CustomerForm
-
 import React,{useState} from 'react'
 
 const Form = (props) => {
@@ -110,3 +47,8 @@ const Form = (props) => {
 }
 
 export default Form
+
+
+
+
+

@@ -15,6 +15,11 @@ const ProductsForm = (props) => {
         }
     }
 
+    const handleReset = () => {
+        setName('')
+        setPrice('')
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         const formData = {
@@ -22,6 +27,7 @@ const ProductsForm = (props) => {
         }
         console.log('form data in prodform', formData)
         formSubmit(formData)
+        handleReset()
         handleToggle()
     }
     return (
